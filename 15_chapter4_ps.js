@@ -35,3 +35,5 @@ let friend = "Deepika"
 friend[3] = "R"
 console.log(friend)  // friend is not changed, because string is immutable
 
+"okay done "
+
