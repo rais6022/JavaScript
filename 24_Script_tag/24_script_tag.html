@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="24_script_tag.css">
+    <title>Script tag</title>
+</head>
+<body>
+    Hello world
+    <script src="24_script_tag.js"></script>
+    <!-- <script src="24_script_tag1.js"></script> -->
+    <!-- <script src="24_script_tag2.js"></script> -->
+
+    <script>
+        // Advantage of using separate script file using src attribute of script tag
+        //1. Separation of concerns
+        //2. Browser Caching
+    </script>
+
+    <script src="24_script_tag.js">
+        console.log("I am trying to be smart")  // This will be ignored 
+    </script>
+</body>
+</html>
