@@ -25,3 +25,4 @@ console.log("One plus Average of a and b is " , onePlusAvg(a, b))
 console.log("One plus Average of a and b is " , onePlusAvg(b, c))
 console.log("One plus Average of a and b is " , onePlusAvg(a, c))
 console.log(sum(9, 7))
+

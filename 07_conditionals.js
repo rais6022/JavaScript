@@ -22,3 +22,5 @@ console.log("You can",(a<18? "not drive" :"Drive"))
 
 
  // This code is on replit also here the promt and alert is not working
+
+ 
