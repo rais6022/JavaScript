@@ -1,4 +1,8 @@
-// Change the card title to red
+// change the color of the card title to red
+
+// let ctitle = document.getElementsByClassName("card-title")[0]
+// ctitle.style.color = "red"  // ek toh yeh method hai card title ko red karne ka
+
 let ctitle = document.getElementById("firstcardtitle")
 ctitle.style.color = "blue"
 
@@ -11,6 +15,8 @@ console.log(ctitles)
 document.querySelector(".this").style.color = "black"
 document.querySelector(".this").style.background = "red"
 
+
 console.log(document.getElementsByTagName("a"))
-console.log(document.querySelector(".card").getElementsByTagName("a"))
+console.log(document.body.getElementsByTagName("a"))
+console.log(document.querySelector(".card").getElementsByTagName("a")) 
 console.log(document.getElementsByName("search"))
