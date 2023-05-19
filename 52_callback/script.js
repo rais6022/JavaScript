@@ -39,13 +39,17 @@ function loadScript(src, callback) {
     var script = document.createElement("script");  // Create a new <script> element
     script.src = src;  // Set the source (SRC) attribute of the <script> element to the provided 'src'
   
+
+    // This function for without error
     script.onload = function() {  // this is running while loading the script
       console.log("Loaded script with SRC: " + src);  // Print a message indicating that the script has been loaded
-      callback(null, src);  // Invoke the provided 'callback' function
+      callback(null, src);  // and null is for the without error callback Invoke the provided 'callback' function
     }
+    
+      // This function for with error
      script.onerror = function() {
       console.log("Error loading script with SRC: " + src); 
-       callback(new Error("Src got some error"))
+       callback(new Error("Src got some error")) // this is for new error
       }
     
     document.body.appendChild(script);  // Append the <script> element to the <body> of the document
