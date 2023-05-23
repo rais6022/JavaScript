@@ -15,8 +15,10 @@ p1.then((value)=>{
     // return p2
 }).then((value)=>{
     console.log("we are done")
+    // console.log(value);  // yaha par es se upper wale .then ki value resovle hoke call hui hai
     return 2
 }).then((value)=>{
     console.log("Now we are pakka done")
+    // console.log(value);  // yaha par es se upper wale .then ki value resovle hoke call hui hai
 })
 
