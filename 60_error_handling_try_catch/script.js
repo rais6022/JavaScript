@@ -13,7 +13,8 @@ try {  // try & catch are working synchronously
             console.log(rahul)
         }
         catch (error) {
-
+                // console.log("Okay");  // agar try catch lagane ke baad resolve ho raha hai to woh chalega 
+                // jis try catch ke ander laga hua hai yeh try catch
         }
     }, 100)
 }
