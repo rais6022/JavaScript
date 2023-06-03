@@ -1,21 +1,21 @@
-class Animal{
-    constructor(name){
+class Animal {
+    constructor(name) {
         // this.name = name
         this.name = Animal.capitalize(name)
     }
-    waldk () {
+    waldk() {
         // console.log(`Animal ` + this.name +` is walking`)
         console.log(`Animal ${this.name} is walking`)
         // console.log("Animal "  + Animal.capitalize(this.name) + " is walking")
     }
-    static capitalize(name){
+    static capitalize(name) {
         return name.charAt(0).toUpperCase() + name.substr(1, name.length)
     }
 }
 
 // j = new Animal(Animal.capitalize("janwar"))
 j = new Animal("janwar")
-j.waldk() 
+j.waldk()
 
 
 // console.log(j.capitalize("thisaanimal")) // -----> this dosen't work
