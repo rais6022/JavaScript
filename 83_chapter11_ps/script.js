@@ -8,7 +8,7 @@ class Complex {
         this.imaginary = this.imaginary + num.imaginary
     }
     get real() {
-        return this._real // underscore (_) isliye lagaya name collision ko avoid karde ke liye 
+        return this._real // underscore (_) isliye lagaya name collision ko avoid karne ke liye 
     }
     get imaginary() {
         return this._imaginary
