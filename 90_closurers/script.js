@@ -86,4 +86,36 @@ function outerFunction() {
   
   var closure = outerFunction();
   closure();
+
+
+
+
+
+
+//   Explaination by TK freeCodeCamp
+
+  function makeFunction() {
+  const name = 'TK';
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+};
+
+const myFunction = makeFunction();
+myFunction(); // TK
+
+
+// We can also make it work as an arrow function:
+const makeFunction = () => {
+    const name = 'TK';
+    return () => console.log(name);
+  };
+
+//   But what if we want to pass the name and display it? Simple! Use a parameter:
+const makeFunction = (name = 'TK') => {
+    return () => console.log(name);
+  };
   
+  // Or as a one-liner
+  const makeFunction = (name = 'TK') => () => console.log(name);
