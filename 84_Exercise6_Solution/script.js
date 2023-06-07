@@ -16,5 +16,5 @@ submit.addEventListener("click", (e) => {
 deleteBtn.addEventListener("click", (e) => {
     e.preventDefault()
     localStorage.removeItem("todo")
-    todo.innerHTML = ""
+    todo.innerHTML = "" 
 })
